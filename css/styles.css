@@ -1,0 +1,93 @@
+:root{
+    --font-light: rgb(255,255,255);
+    --font-dark: rgb(30, 30, 30);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+body{
+    font-family: "Open Sans", system-ui;
+    font-size:16px;
+    min-height: 100vh;
+    display: flex;
+    color: var(--font-dark);
+}
+
+body .sidebar{
+    flex-basis: min(450px, 50%);
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url("../img/background.jpg");
+    background-size: cover;
+}
+
+.sidebar .branding{
+    display: flex;
+    margin: auto 0;
+    gap:16px;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35))
+}
+
+.sidebar .logo{
+    max-width: 75px;
+
+}
+
+.sidebar .company-name{
+    font-family: Skranji, system-ui;
+    font-weight: 400;
+    color: var(--font-light);
+    font-size: clamp(2rem, 1.8rem + 1vw, 3rem);
+}
+
+.sidebar .credit{
+   align-self: center;
+   color: var(--font-light);
+   font-size:1.15rem; 
+}
+
+.credit a{
+    color:var(--font-light);
+}
+
+.credit a:hover{
+    opacity: 0.8;
+}
+
+body .main-area{
+    flex-grow: 1;
+}
+
+
+

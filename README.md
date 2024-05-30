@@ -1,2 +1,8 @@
 <h1>Sign up form - 2024<h1>
+
 <p>A sign-up form made with HTML and CSS. This project was done as a part of The Odin Project's curriculum in 2024.</p>
+
+<h3>Credit</h3>
+
+<p>Photo by <a href="https://unsplash.com/@jonnyauh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jonny Auh</a> on <a href="https://unsplash.com/photos/aerial-view-photography-of-body-of-water-across-green-mountains-z99iWocuDt0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+  
