@@ -1,6 +1,7 @@
 :root{
     --font-light: rgb(255,255,255);
     --font-dark: rgb(30, 30, 30);
+    --page-padding: 20px 0px;
 }
 
 *, *::before, *::after {
@@ -41,7 +42,7 @@ body{
 
 body .sidebar{
     flex-basis: min(450px, 50%);
-    padding: 20px 0px;
+    padding: var(--page-padding);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -87,7 +88,45 @@ body .sidebar{
 
 body .main-area{
     flex-grow: 1;
+    display: flex;
+    padding: var(--page-padding);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.main-area .title{
+    width:clamp(45ch, 50%, 75ch);
+    font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
+    font-weight:500;
+
+}
+
+.main-area .signup-form{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    width:clamp(45ch, 50%, 75ch);
+
+}
+
+.signup-form > div {
+    display: flex;
+    gap:16px;
+
+}
+
+.signup-form > div > div{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap:4px;
+}
+
+.signup-form .submit-form{
+    align-self: center;
+    margin-top:12px;
+    padding: 12px 12px;
+}
 
 
