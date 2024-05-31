@@ -223,4 +223,8 @@ body .main-area{
     .signup-form > div{
         flex-direction: column;
     }
+
+    input{
+        min-width: 0;
+    }
 }
