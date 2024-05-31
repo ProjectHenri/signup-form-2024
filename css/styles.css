@@ -123,7 +123,6 @@ body .main-area{
     flex-direction: column;
     gap:20px;
     width:clamp(45ch, 50%, 75ch);
-    padding:36px 24px;
     border-radius: 8px;
 }
 
