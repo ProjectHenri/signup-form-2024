@@ -121,7 +121,7 @@ body .main-area{
 .main-area .signup-form{
     display: flex;
     flex-direction: column;
-    gap:24px;
+    gap:20px;
     width:clamp(45ch, 50%, 75ch);
     padding:36px 24px;
     border-radius: 8px;
@@ -152,7 +152,7 @@ body .main-area{
 .signup-form .submit-form{
     align-self: center;
     margin-top:20px;
-    padding: 14px 12px;
+    padding: 14px 24px;
     border: none;
     border-radius: 8px;
     background-color: var(--primary-color);
@@ -165,8 +165,8 @@ body .main-area{
 }
 
 .signup-form label{
-    font-weight:500;
-    font-size:0.8rem;
+    font-weight:450;
+    font-size:1rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: var(--primary-color);
@@ -184,13 +184,40 @@ body .main-area{
     color:red;
 }
 
-input:focus{
+.signup-form input:focus{
     outline: none;
     border: solid 2px var(--primary-color);
 }
 
-input:invalid{
+.signup-form input:not(:placeholder-shown):invalid{
     border:2px solid red;
 }
 
+.main-area .login{
+    font-weight: 450;
+}
+
+.main-area .login a{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    
+    body{
+        flex-direction: column;
+    }
+
+    body .sidebar{
+        background-position: center;
+        gap:20px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    
+    .signup-form > div{
+        flex-direction: column;
+    }
+}
 
