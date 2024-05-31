@@ -177,7 +177,9 @@ body .main-area{
     border:solid 2px rgb(214, 214, 214);
     border-radius:8px;
     background-color: rgb(252, 252, 252);
+    min-width: 0;
 }
+
 .signup-form .required-field::after{
     content: "*";
     margin-left:3px;
@@ -222,9 +224,5 @@ body .main-area{
     
     .signup-form > div{
         flex-direction: column;
-    }
-
-    input{
-        min-width: 0;
     }
 }
