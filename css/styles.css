@@ -220,6 +220,10 @@ body .main-area{
 }
 
 @media all and (max-width: 480px) {
+
+    .main-area .signup-form{
+        width: 100%;
+    }
     
     .signup-form > div{
         flex-direction: column;
