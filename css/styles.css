@@ -212,6 +212,10 @@ body .main-area{
         background-position: center;
         gap:20px;
     }
+
+    body .main-area{
+        padding:20px 20px;
+    }
 }
 
 @media all and (max-width: 480px) {
@@ -220,4 +224,3 @@ body .main-area{
         flex-direction: column;
     }
 }
-
